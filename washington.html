@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Washington State</title>
+    <link rel="stylesheet" href="statestyle.css">
+    <script>
+        function validateEmail() {
+            var email= document.getElementById("email").value;
+            var confirmEmail= document.getElementById("confirmEmail").value;
+            if (email !== confirmEmail) {
+                alert("Email addresses do not match. Please confirm your email.");
+                return false;}
+            return true;}
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header"><img src="shutterstock_2174509299.svg" alt="Washington State shape">
+            <h1>Washington State</h1>
+            <h4>The Evergreen State</h4>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="washington.html">Home</a></li>
+                <li><a href="olympia.html">Olympia</a></li>
+                <li><a href="seattle.html">Seattle</a></li>
+                <li><a href="vancouver.html">Vancouver</a></li>
+            </ul>
+        </div>
+        <div class="section">Welcome! Here you will find a guide to all things Washington State. From population information to the diverse cultures nestled in different corners of the state. Washington offers so much with different geographical areas like mountainous ranges to our beautiful lakes, rivers, and oceanside. Washington has it all. Come take a look and explore The Evergreen State.
+            <img src="shutterstock_1070732822.jpg" alt="Washington mountain landscape"> </div>
+        <div class="section2">            
+            <table id="mostPopulated">
+                <thead>
+                     <tr>
+                        <th>City</th>
+                        <th>Population</th>
+                        <th>Rank</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Seattle</td>
+                        <td>Spokane</td>
+                        <td>Tacoma</td>
+                    </tr>
+                    <tr>
+                        <td>721,307</td>
+                        <td>229,735</td>
+                        <td>218,671</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="aside"><h2>Top Attractions</h2>
+            <ol>
+                <li>Leavenworth</li>
+                <li>The Seattle Space Needle</li>
+                <li>San Juan Islands</li>
+                <li>Olympic National Park</li>
+                <li>Sol Duc Hotsprings</li>
+                <li><a href="https://www.planetware.com/tourist-attractions/washington-uswa.htm" target="_blank"> Click here for an extensive list of top Washington State attractions </a></li>
+            </ol>
+            <p>Sign up below to receive our monthly newsletter</p>
+            <form>
+                <div><label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Enter your first name" required></div>
+                <div><label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Enter your last name" required></div>
+                <div><label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter email address" required></div>
+                <div><label for="confirmEmail">Confirm Email:</label>
+                <input type="email" id="confirmEmail" name="confirmEmail" placeholder="Confirm your email" required></div>
+                <div><input type="submit" value="submit"></div>
+            </form>
+        </div>
+        <div class="footer">
+            <div>Sources</div>
+            <div>https://worldpopulationreview.com/states/cities/washington</div>
+            <div>https://www.planetware.com/tourist-attractions/washington-uswa.htm</div>
+        </div>
+    </div>
+</body>
+</html>
